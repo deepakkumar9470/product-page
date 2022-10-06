@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product Page</title>
+</head>
+<body>
+
+    <section class="header">
+      <a href=""><img src="./images/black_logo.png" class="logo" alt="logo"></a>
+      <div>
+        <ul class="navbar">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Home & Living</a></li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <i class="fa-solid fa-bars"></i>
+        <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+      </div>
+       
+       <div class="icons">
+        <img src="./images/icon-search.svg" alt="">
+        <img src="./images/icon-profile.svg" alt="">
+        <img src="./images/icon-cart.svg" alt="">
+        <!-- <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-regular fa-bags-shopping"></i> -->
+       </div>
+    </section>
+
+    <section class="productpage">
+
+         <div class="iamge_gallery">
+            <img src="./images/product-image-1.png" alt="p1">
+            <img src="./images/product-image-2.png" alt="p1">
+            <img src="./images/product-image-3.png" alt="p1">
+            <img src="./images/product-image-1.png" alt="p1">
+         </div>
+
+          <div class="produc_text" id="item1">
+            <img class="cart_img" src="./images/product-image-1.png" alt="">
+            <span>CLOTHING COMPANY</span>
+            
+            <p>Ruffled Sleeveless Top</p>
+            <div class="price">
+                <span class="strike_price">Rs 1,500.00</span>
+                <span class="actual_price">Rs 899.00</span>
+                <button class="sale_btn">Sale</button>
+            </div>
+
+            <div class="sizes">
+                <span>Size</span>
+                <div class="sizes_btn">
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <span>Quantity</span>
+                <div class="in_dec">
+                    <span class="minus">-</span>
+                    <span class="count">1</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+
+           <div class="btn_group">
+            <button class="add_to_cart_btn"  onclick="addToCart(item1)">Add to cart</button>
+            <button class="buy_now_btn">Buy it now</button>
+           </div>
+
+           <span class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempore ad eos numquam, dolorem aperiam totam, obcaecati quas ipsam at aliquam labore nobis ipsum! Iste, accusantium eum. Ad, eveniet quia.</span>
+
+          </div>
+         
+    </section>
+
+    <div class="cart" id="cart">
+        <div class="title">YOUR CART</div>
+        <div id="title"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
